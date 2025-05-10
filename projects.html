@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="projects-content">
+                <h1 class="animate-fade-in">My Projects</h1>
+                <p class="animate-fade-in delay-1">Here are some of the projects I've worked on. Each one represents a unique challenge and solution.</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="app">Mobile Apps</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card animate-on-scroll" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="E-commerce Website">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Website</h3>
+                    <p>A fully responsive e-commerce platform with shopping cart functionality.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll" data-category="design">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="Mobile App UI Design">
+                </div>
+                <div class="project-info">
+                    <h3>Mobile App UI Design</h3>
+                    <p>A clean and modern UI design for a fitness tracking mobile application.</p>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI/UX</span>
+                        <span>Prototyping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="Portfolio Website">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing projects and skills.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll" data-category="app">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="Weather App">
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A mobile app that provides real-time weather information.</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>API Integration</span>
+                        <span>Mobile</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="Blog Platform">
+                </div>
+                <div class="project-info">
+                    <h3>Blog Platform</h3>
+                    <p>A content management system for creating and managing blog posts.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll" data-category="design">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400/f8f8f8/cccccc" alt="Dashboard UI">
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard UI</h3>
+                    <p>A clean and intuitive dashboard interface for data visualization.</p>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI/UX</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm">View Project</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <h2>Interested in working together?</h2>
+            <p>I'm always open to discussing new projects and opportunities.</p>
+            <a href="mailto:contact@example.com" class="btn btn-primary">Get In Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
