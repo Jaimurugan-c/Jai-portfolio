@@ -574,7 +574,7 @@
     background-color: var(--primary-color);
     color: var(--light-text);
     text-align: center;
-    padding: 5rem 5%;
+    padding: 1rem 5%;
   }
   
   .projects-filter {
