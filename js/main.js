@@ -94,14 +94,14 @@ const initTypingAnimation = () => {
     if (charIndex < currentTitle.length) {
       typingElement.textContent += currentTitle[charIndex];
       charIndex++;
-      setTimeout(typeTitle, 50);
+      setTimeout(typeTitle, 100);
     } else {
       setTimeout(() => {
         typingElement.textContent = '';
         charIndex = 0;
         titleIndex = (titleIndex + 1) % titles.length;
         typeTitle();
-      }, 2000);
+      }, 3000);
     }
   };
   
@@ -451,14 +451,44 @@ const initProjectFilter = () => {
 const animateSkillBars = () => {
   const skillBars = document.querySelectorAll(".skill-progress");
   
-  skillBars.forEach((bar) => {
-    const width = bar.style.width;
-    bar.style.width = "0";
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const width = bar.getAttribute('data-width') || bar.style.width;
+        bar.setAttribute('data-width', width);
+        bar.style.width = "0";
+        
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 300);
+        
+        observer.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  skillBars.forEach(bar => observer.observe(bar));
+};
+
+// ==================== AUTO CHANGE TITLE ====================
+const initAutoChangeTitle = () => {
+  const titles = ['MERN Developer', 'Frontend Developer', 'PERN Developer', 'Full Stack Developer'];
+  const titleElement = document.querySelector('.auto-change-title');
+  
+  if (!titleElement) return;
+  
+  let index = 0;
+  
+  setInterval(() => {
+    titleElement.style.opacity = '0';
     
     setTimeout(() => {
-      bar.style.width = width;
+      index = (index + 1) % titles.length;
+      titleElement.textContent = titles[index];
+      titleElement.style.opacity = '1';
     }, 500);
-  });
+  }, 3000);
 };
 
 // ==================== INITIALIZE ALL ====================
@@ -471,6 +501,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilter();
   animateSkillBars();
   initTypingAnimation();
+  initAutoChangeTitle();
   updateActiveNavLink();
 });
 
