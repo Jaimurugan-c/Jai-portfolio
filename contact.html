@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jaimurugan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>Jai</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" title="Toggle theme">🌙</button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1)); text-align: center; padding: 6rem 5%;">
+            <div class="contact-content">
+                <h1 class="animate-fade-in">Get In Touch</h1>
+                <p class="animate-fade-in delay-1" style="font-size: 1.1rem; color: #666;">I'd love to hear from you! Whether you have a question or just want to say hello, feel free to reach out.</p>
+            </div>
+        </section>
+
+        <section style="padding: 5rem 5%;">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                    <!-- Email Card -->
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-envelope" style="font-size: 2.5rem; background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:jaimurugan1703@gmail.com" style="color: #6366f1; font-weight: 600;">jaimurugan1703@gmail.com</a></p>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="service-card animate-on-scroll">
+                        <i class="fab fa-linkedin" style="font-size: 2.5rem; background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/jaimuruganchandiran/" target="_blank" rel="noopener noreferrer" style="color: #6366f1; font-weight: 600;">Connect with me</a></p>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="service-card animate-on-scroll">
+                        <i class="fab fa-github" style="font-size: 2.5rem; background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/Jaimurugan-c" target="_blank" rel="noopener noreferrer" style="color: #6366f1; font-weight: 600;">Check my projects</a></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 3rem; margin-top: 3rem;">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Send me a Message</h2>
+                    <form style="display: grid; gap: 1.5rem;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name</label>
+                                <input type="text" placeholder="Your name" style="width: 100%; padding: 0.8rem; border: 2px solid rgba(99, 102, 241, 0.3); border-radius: 10px; font-size: 1rem; transition: all 0.3s ease;" required>
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
+                                <input type="email" placeholder="Your email" style="width: 100%; padding: 0.8rem; border: 2px solid rgba(99, 102, 241, 0.3); border-radius: 10px; font-size: 1rem; transition: all 0.3s ease;" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
+                            <input type="text" placeholder="What is this about?" style="width: 100%; padding: 0.8rem; border: 2px solid rgba(99, 102, 241, 0.3); border-radius: 10px; font-size: 1rem; transition: all 0.3s ease;" required>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+                            <textarea placeholder="Your message..." rows="6" style="width: 100%; padding: 0.8rem; border: 2px solid rgba(99, 102, 241, 0.3); border-radius: 10px; font-size: 1rem; transition: all 0.3s ease; resize: vertical;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3 style="margin-bottom: 1.5rem;">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Jaimurugan-c" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jaimuruganchandiran/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:jaimurugan1703@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i>
+                <span>Visitors: <span class="visitor-count">0</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

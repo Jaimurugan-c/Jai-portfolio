@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jp</title>
+    <title>Projects - Jaimurugan</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
     <header>
         <div class="logo">
             <h1>Jai</h1>
         </div>
         <nav>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
             </ul>
+            <button class="theme-toggle" title="Toggle theme">🌙</button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
 
@@ -181,7 +192,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i>
+                <span>Visitors: <span class="visitor-count">0</span></span>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

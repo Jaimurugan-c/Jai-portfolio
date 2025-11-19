@@ -3,66 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JP</title>
+    <title>Jaimurugan - MERN Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
     <header>
         <div class="logo">
             <h1>Jai</h1>
         </div>
         <nav>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="animate-fade-in">Hello, I'm <span class="highlight">Jaimurugan</span></h1>
-                <h2 class="animate-fade-in delay-1">MERN developer</h2>
-                <p class="animate-fade-in delay-2">I create beautiful, functional websites with clean code.</p>
-                <div class="cta-buttons animate-fade-in delay-3">
-                    <a href="assets/resume.pdf" download class="btn btn-primary">Download CV</a>
-                    <a href="projects.html" class="btn btn-secondary">View Projects</a>
+                <h1 class="fade-in">Hello, I'm <span class="gradient-text">Jaimurugan</span></h1>
+                <div class="typing-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="fade-in delay-2">
+                    Building beautiful, functional web applications with modern
+                     technologies</p>
+                <div class="cta-buttons fade-in delay-3">
+                    <a href="assets/resume.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i> View Projects
+                    </a>
                 </div>
             </div>
-            <div class="hero-image animate-slide-in">
+            <div class="hero-image fade-in delay-1">
                 <div class="profile-shape"></div>
             </div>
         </section>
 
+        <!-- About Brief Section -->
+        <section class="about-brief">
+            <div class="about-brief-content">
+                <div class="about-text fade-in">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate MERN Stack Developer from Salem, Tamil Nadu, India. I specialize in building beautiful, functional web applications with clean code and modern technologies. With expertise in both frontend and backend development, I create seamless user experiences and scalable solutions.</p>
+                    <p>My journey in web development started in July 2024, and I've since completed internships and built multiple projects. I'm committed to continuous learning and delivering high-quality work.</p>
+                    <a href="about.html" class="btn btn-secondary">Learn More About Me</a>
+                </div>
+                <div class="about-stats fade-in delay-1">
+                    <div class="stat-box">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
         <section class="services">
-            <h2 class="section-title">What I Do</h2>
+            <h2 class="section-title">What I Offer</h2>
             <div class="services-container">
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-code"></i>
-                    <h3>Web-design</h3>
-                    <p>Crafting visually appealing, responsive web designs using HTML, CSS, JavaScript, 
-                        and Bootstrap to create seamless, user-friendly experiences across all devices.</p>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive, interactive user interfaces with HTML5, CSS3, JavaScript, and React. I focus on clean code, performance, and beautiful design.</p>
                 </div>
                 <div class="service-card animate-on-scroll">
-                    <i class="	fas fa-layer-group"></i>
-                    <h3>Full-stack</h3>
-                    <p>Building dynamic, full-stack web applications with the MERN stack (MongoDB, Express.js, React, Node.js)
-                         for scalable, responsive, and high-performance solutions</p>
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building complete web applications using the MERN stack. From database design to API development to frontend implementation, I handle it all.</p>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-network-wired"></i>
-                    <h3>API integration</h3>
-                    <p>Integrating robust APIs into MERN stack applications to enable seamless data exchange, enhancing
-                         functionality and performance across front-end and back-end systems</p>
+                    <h3>API Integration</h3>
+                    <p>Integrating third-party APIs and building RESTful APIs for seamless data exchange. I ensure smooth communication between frontend and backend systems.</p>
                 </div>
             </div>
         </section>
@@ -85,7 +130,7 @@
                             <div class="skill-info">
                                 <p>JavaScript</p>
                                 <p>90%</p>
-                            </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
@@ -154,6 +199,19 @@
                 </div>
             </div>
         </section>
+
+        <section class="fun-section">
+            <h2 class="section-title">🎲 JusT roll</h2>
+            <div class="dice-container">
+                <div class="dice" id="dice">
+                    <div class="dice-face">1</div>
+                </div>
+                <button class="roll-btn" id="rollBtn">Roll the Dice</button>
+                <div class="message-box" id="messageBox">
+                    <p class="message-text">Click the dice to get your daily motivation!</p>
+                </div>
+            </div>
+        </section>
          
              
     
@@ -170,7 +228,13 @@
     </main>
      
     <footer>
-        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i>
+                <span>Visitors: <span class="visitor-count">0</span></span>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
